@@ -24,3 +24,11 @@ def checkEmail(email):
         exit(warn('Invalid email %s'%email))
     return email
 
+def checkSource(source):
+    list_source = ['all', 'ask', 'baidu', 'google', 'bing',
+                   'dogpile', 'exalead', 'jigsaw', 'pgp', 'yahoo'
+                   ]
+
+    if source not in list_source:
+        exit(warn('Invalid search engin: %s'%source))
+    return source
