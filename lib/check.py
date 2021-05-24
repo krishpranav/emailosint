@@ -18,3 +18,9 @@ def checkTarget(target):
         if "www." in o.netloc: return o.netloc.split("www.")[1]
         return o.netloc
     else: return target
+
+def checkEmail(email):
+    if '@' not in email:
+        exit(warn('Invalid email %s'%email))
+    return email
+
