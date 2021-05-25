@@ -4,7 +4,7 @@
 # imports
 import sys
 import json
-from lib.colors import *
+from lib.color import *
 from recon.pwned import *
 from recon.shodan import *
 
